@@ -112,5 +112,84 @@
         </div>
       </div>
     </section>
+
+    <!-- ?  bmi calculator -->
+
+    <section class="BMI-Calculator">
+      <div class="bmi-content">
+        <h2>BMI Calculator</h2>
+        <p>
+          Calculating your Body Mass Index (BMI) is a simple method to assess
+          your body weight relative to your height.While BMI is a useful
+          screening tool, it doesn't account for muscle mass or fat
+          distribution, so consider other assessments for a comprehensive health
+          evaluation
+        </p>
+      </div>
+    </section>
+    <section class="bmi-calculator-chart">
+      <!--bmi-calculator-parent start-->
+      <div class="bmi-calculator-parent">
+        <!--calculator-chart start -->
+        <div class="calculator-chart">
+          <h2>BMI Calculator Chart</h2>
+          <table>
+            <thead>
+              <th>BMI</th>
+              <th>Weight Status</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Below 18.5</td>
+                <td>Underweight</td>
+              </tr>
+              <tr>
+                <td>18.5 - 24.9</td>
+                <td>Healthy</td>
+              </tr>
+              <tr>
+                <td>25.0 - 29.9</td>
+                <td>Overweight</td>
+              </tr>
+              <tr>
+                <td>30.0 - and above</td>
+                <td>Obese</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!--calculator-chart end -->
+
+        <!--formCalculate start-->
+        <div class="formCalculate">
+          <h1>Calculate your BMI</h1>
+          <p>
+            calculate your BMI, divide your weight in kilograms by your height
+            in meters squared (BMI = weight (kg) / height (m²)). For example, if
+            you weigh 70 kg and are 1.75 meters tall, your BMI would be 22.86.
+          </p>
+          <!--formSection start-->
+          <div class="formSection">
+            <li><input type="text" value="Height/cm" /></li>
+            <li><input type="text" value="Weight/kg" /></li>
+            <li><input type="text" value="Age" /></li>
+            <li>
+              <input type="text" value="Sex" /><i
+                class="fa-solid fa-angle-down"
+              ></i>
+            </li>
+            <li class="list-factor">
+              <input type="text" value="Select an activity factor" /><i
+                class="fa-solid fa-angle-down"
+              ></i>
+            </li>
+          </div>
+          <!--formSection end-->
+          <button type="submit">Calculate</button>
+        </div>
+        <!--formCalculate end-->
+      </div>
+      <!--bmi-calculator-parent end-->
+    </section>
   </body>
 </html>
