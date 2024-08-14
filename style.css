@@ -208,30 +208,34 @@ body {
   display: flex;
   gap: 50px;
 }
-.img-sec {
-  border-radius: 100px;
-  margin-left: 30px;
-}
-.sec-h {
-  color: rgb(255, 255, 255);
-  font-family: Inter;
+.grid-boxs {
+  width: 100%;
+  min-height: 400px;
+  display: grid;
+  gap: 20px;
+  align-content: center;
   text-align: center;
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 120%;
-  /* letter-spacing: 0%;
-  text-align: left; */
+  grid-template-columns: repeat(4, 1fr);
 }
-.sec-p {
-  color: rgba(255, 255, 255, 0.5);
-  font-family: Inter;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 18px;
-  letter-spacing: 0.3px;
-  text-align: center;
+.grid-boxs .box-item h2 {
+  color: var(--color);
+}
+.box-item p {
+  color: var(--text-color);
+}
+.box-item img {
+  border-radius: 50%;
 }
 
+@media screen and (max-width: 576px) {
+  .habits {
+    margin-top: 50px;
+  }
+  .img-section {
+    grid-template-columns: repeat(1, 1fr) !important;
+    margin-top: 20px;
+  }
+}
 /* 
   run  */
 .run-h1 {
@@ -279,6 +283,27 @@ body {
   top: 30px;
 }
 
+@media screen and (max-width: 576px) {
+  .run-main {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .run-main.run-content {
+    width: 100%;
+  }
+  .run-main.run-content p {
+    width: 100%;
+    font-size: 1rem;
+  }
+  .run-main.run-img {
+    width: 100%;
+  }
+  .run-main.run-img {
+    width: 100%;
+    transform: translateX(0px);
+  }
+}
+
 /* BMI-Calculator style */
 .BMI-Calculator {
   max-width: 100%;
@@ -297,6 +322,7 @@ body {
   color: var(--text-color);
   font-size: 1.2rem;
 }
+
 @media screen and (max-width: 567px) {
   .BMI-Calculator .bmi-content {
     width: 100%;
@@ -410,6 +436,11 @@ table td {
   margin-top: 40px;
 }
 
+@media screen and (max-width: 576px) {
+  .bmi-calculator-parent {
+    flex-direction: column;
+  }
+}
 /* team section style */
 .team {
   max-width: 100%;
@@ -466,6 +497,15 @@ table td {
   color: var(--text-color);
 }
 
+@media screen and (max-width: 576px) {
+  .team p {
+    width: 90%;
+  }
+  .team .card-items {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
 /* !  footer */
 .foot-h1 {
   font-size: 60px;
@@ -488,7 +528,7 @@ table td {
   color: rgb(255, 255, 255);
 }
 
-.footer {
+.footer-content {
   display: flex;
   justify-content: space-between;
 }
@@ -503,4 +543,27 @@ table td {
   text-align: center;
   padding-bottom: 35px;
   padding-top: 23px;
+}
+
+@media screen and (max-width: 576px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer-content .f-box1 {
+    width: 100%;
+  }
+  .footer-content .f-box1 p {
+    width: 100%;
+    font-size: 1rem;
+  }
+  .footer-content .footer-description {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 30px;
+  }
+  .f-box2 {
+    width: 100%;
+  }
 }
